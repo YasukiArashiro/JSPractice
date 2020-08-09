@@ -20,4 +20,21 @@ console.log(10 ** 3); //10の３乗
 console.log(2 + 10 * 3); //32
 console.log((2 + 10) * 3); //36
 
+// 定数 const
+
+console.log(150 * 140);
+console.log(150 * 160);
+
+const Price = 150;
+
+console.log(Price * 140);
+console.log(Price * 160);
+
+// 変数 let
+
+let price = 170;
+
+console.log(price * 140);
+console.log(price * 160);
+
 
