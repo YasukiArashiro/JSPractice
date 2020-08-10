@@ -37,4 +37,26 @@ let price = 170;
 console.log(price * 140);
 console.log(price * 160);
 
+// 変数計算
+
+// price = price + 100;
+price += 100; //270
+
+// price = price * 2;
+price *= 2; //540
+
+//price = price + 1;
+//price += 1;
+
+price++; //541
+
+//price = price - 1;
+//price -= 1;
+price--; //540
+
+console.log(price)
+
+
+
+
 
