@@ -66,4 +66,12 @@ console.log(typeof undefined);
 console.log(typeof null);
 
 
+//数字からなる文字列の計算
 
+console.log('5' * 3);
+console.log('5' - '3');
+
+console.log('5' + 3);  // +の場合のみ文字列の連結になる。
+                       // それ以外の演算子では数値の計算になる。
+console.log(parseInt('5', 10) + 3); //計算をしたい場合は左の書き方。
+                                    //parseInt('5', 10)で文字列の５を１０進数の整数値に変換する。
