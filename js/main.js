@@ -75,3 +75,14 @@ console.log('5' + 3);  // +の場合のみ文字列の連結になる。
                        // それ以外の演算子では数値の計算になる。
 console.log(parseInt('5', 10) + 3); //計算をしたい場合は左の書き方。
                                     //parseInt('5', 10)で文字列の５を１０進数の整数値に変換する。
+
+
+// 比較演算子
+
+console.log(price > 1000);
+console.log(price < 1000);
+console.log(price >= 1000);
+console.log(price <= 1000);
+console.log(price === 1000);
+console.log(price !== 1000);
+
