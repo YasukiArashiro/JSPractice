@@ -86,3 +86,19 @@ console.log(price <= 1000);
 console.log(price === 1000);
 console.log(price !== 1000);
 
+
+// 条件分岐
+
+const score = 85;
+
+if(score >= 80) {
+	console.log('Great!');
+} else if (score >= 60) {
+	console.log('Good.');
+} else {
+	console.log('OK...');
+}
+
+
+
+
