@@ -100,5 +100,9 @@ if(score >= 80) {
 }
 
 
+// 条件演算子
 
+// 条件式 ? trueの処理 : falseの処理
+
+score >= 80 ? console.log('Great!!') : console.log('OK....');
 
