@@ -106,3 +106,24 @@ if(score >= 80) {
 
 score >= 80 ? console.log('Great!!') : console.log('OK....');
 
+
+//論理演算式
+
+const name =  'taguchi'
+
+if (score >=50) {
+	if (name === 'taguchi') {
+		console.log('Good job!');
+	}
+}
+
+/// %% なおかつ (AND)
+/// || もしくは (OR)
+/// !  〜ではない(NOT)
+
+// 論理演算子を使用して書くと...
+if (score >= 50 && name === 'taguchi') {
+	console.log('good job!');
+}
+
+
