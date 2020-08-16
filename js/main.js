@@ -126,4 +126,32 @@ if (score >= 50 && name === 'taguchi') {
 	console.log('good job!');
 }
 
+// 条件分岐
+
+const signal = 'blue';
+
+if(signal === 'red') {
+	console.log('stop!');
+} else if (signal === 'yellow') {
+	console.log('Caution!');
+} else if (signal === 'blue') {
+	console.log('Go!');
+}
+
+
+switch (signal) {
+	case 'red':
+		console.log('Stop!');
+		break;
+	case 'yellow':
+		console.log('Caution!');
+		break;
+	case 'blue':
+		console.log('Go!');
+		break;
+}
+
+
+
+
 
