@@ -157,5 +157,21 @@ for (let i = 1; i <= 10; i++) {
 	console.log(`hello ${i}`);
 }
 
+//while文
 
+let hp = 100;
 
+while (hp > 0) {
+	console.log(`${hp} HP left!`);
+	hp -= 15;
+}
+
+// do..while
+
+let mp = -50;
+
+do {
+	console.log(`${mp} MP left!`);
+	mp -= 15;
+} while (mp > 0);
+// ↑最低でも１回はdoの処理が行われ、whileの条件がtrueならもう一回同じ処理を繰り返す。
