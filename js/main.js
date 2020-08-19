@@ -175,3 +175,17 @@ do {
 	mp -= 15;
 } while (mp > 0);
 // ↑最低でも１回はdoの処理が行われ、whileの条件がtrueならもう一回同じ処理を繰り返す。
+
+
+
+// continue break文
+
+for (let i = 1; i <= 15; i++) {
+	if (i % 3 === 0) {
+		continue;  //iが3の倍数の時だけ処理をスキップする
+	}
+	if (i === 14) {
+		break;  //iが14になったらループ処理を終了する
+	}
+	console.log(i);
+}
