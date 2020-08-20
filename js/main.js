@@ -189,3 +189,42 @@ for (let i = 1; i <= 15; i++) {
 	}
 	console.log(i);
 }
+
+
+//関数で処理をまとめる
+
+console.log('----------------');
+console.log('-------Ad-------');
+console.log('----------------');
+console.log('Tom is great');
+console.log('----------------');
+console.log('-------Ad-------');
+console.log('----------------');
+console.log('bob is great');
+console.log('----------------');
+console.log('-------Ad-------');
+console.log('----------------');
+console.log('steave is great');
+console.log('----------------');
+console.log('-------Ad-------');
+console.log('----------------');
+console.log('richard is great');
+
+//　　↑を関数でまとめると
+
+function showAd() {
+	console.log('----------------');
+	console.log('-------Ad-------');
+	console.log('----------------');
+}
+
+showAd();
+console.log('Tom is great');
+showAd();
+console.log('bob is great');
+showAd();
+console.log('steave is great');
+showAd();
+console.log('richard is great');
+
+
