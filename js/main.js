@@ -227,4 +227,24 @@ console.log('steave is great');
 showAd();
 console.log('richard is great');
 
+// 引数
+
+console.log('--------引数------------')
+
+function ShowAd(message = 'Adddddd') { //仮引数  引数を渡さないとAddddddで実行される
+	console.log('--------------------');
+	console.log(`-----${message}-----`);
+	console.log('--------------------');
+
+}
+
+ShowAd('Header Ad'); //実引数
+console.log('Tom is great');
+console.log('bob is great');
+ShowAd('Ad');
+console.log('steave is great');
+console.log('richard is great');
+ShowAd('Footer Ad');
+console.log('↓引数なしで実行');
+ShowAd();
 
