@@ -248,3 +248,20 @@ ShowAd('Footer Ad');
 console.log('↓引数なしで実行');
 ShowAd();
 
+// return
+
+function sum(a, b, c) {
+	console.log(a + b+ c);
+}
+
+sum(1, 2, 3);
+sum(3, 4, 5);
+
+
+
+function Sum(a, b, c) {
+	return a + b +c;
+}
+
+const total = Sum(1, 2, 3) + Sum(3, 4, 5);
+console.log(total);
