@@ -265,3 +265,17 @@ function Sum(a, b, c) {
 
 const total = Sum(1, 2, 3) + Sum(3, 4, 5);
 console.log(total);
+
+
+// 関数宣言　まとめ
+//
+// ↓関数式
+// const 定数名 = function(仮引数, 仮引数, ...) {
+// 処理;
+// 処理;
+// return 返り値;
+// }
+//
+// ↓呼び出し
+// 定数名(実引数, 実引数, ...);
+
