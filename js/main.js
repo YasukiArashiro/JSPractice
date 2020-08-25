@@ -301,4 +301,21 @@ const TOTAL = SUM(1, 2, 3) + SUM(3, 4, 5);
 console.log(TOTAL);
 
 
+// アロー関数
+
+// const SuM = function(a, b,c) {
+// 	return a + b + c;
+// };
+// ↑と↓は同じ意味
+const SuM = (a, b,c) => a + b + c;
+
+
+// const double = function(a) {
+// 	return a * 2;
+// };
+// ↑と↓は同じ意味
+const double = a => a * 2;
+
+console.log(double(12));
+
 
