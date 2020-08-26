@@ -319,3 +319,15 @@ const double = a => a * 2;
 console.log(double(12));
 
 
+// スコープ
+
+const x = 2;
+
+function f() {
+	const x = 1; //const x = 1; が有効なのはこの関数のブロック内のみ
+	console.log(x);
+}
+
+f();
+console.log(x);
+
