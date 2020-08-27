@@ -331,3 +331,10 @@ function f() {
 f();
 console.log(x);
 
+
+{
+	const y =100;
+    console.log(y);
+}
+//JSBatic.htmlにもconst y = 300; の記述があるが{}で囲ってブロックを分けると
+//スコープが別になるので問題なく動作する
