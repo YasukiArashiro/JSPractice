@@ -7,4 +7,19 @@
 
 	const scores = [80, 90, 40];
 	console.log(scores);
+
+	console.log('↓配列のインデックスが１番目の値を表示')
+	console.log(scores[1]);
+
+
+	console.log('配列の値を変更する')
+	scores[2] = 44;
+	console.log('scores[2] = 44; で変更後の配列↓')
+	console.log(scores);
+
+	console.log('このようにconstで指定しても配列なら代入可能')
+
+	console.log('↓console.log(scores.length); を使って配列の要素の数を表示')
+	console.log(scores.length);
+
 }
