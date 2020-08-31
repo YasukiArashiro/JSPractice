@@ -32,4 +32,12 @@
 		console.log(`Score ${i}: ${scores[i]}`);
 	}
 
+//配列の要素の変更
+
+	scores.push(60, 50); //配列scoresの末尾に要素60と50を追加
+	scores.shift();  //配列の先頭の要素を削除　今回は80が消える
+					 //先頭の１個しか消せないので()の中身は何か書く必要はない
+	console.log(scores);
+
+
 }
