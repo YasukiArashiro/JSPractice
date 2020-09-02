@@ -52,4 +52,15 @@
 	}
 
 
+//スプレッド構文
+	const otherScores = [10, 20];  //↓この...がスプレッド構文
+	const ScoreS = [80, 90, 40, 70, ...otherScores];
+	console.log(ScoreS);
+
+	function sum(a, b) {
+		console.log(a + b);
+	}
+
+	sum(...otherScores);
+	//sum(10, 20);
 }
