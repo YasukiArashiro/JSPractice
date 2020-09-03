@@ -63,4 +63,32 @@
 
 	sum(...otherScores);
 	//sum(10, 20);
+
+//分割代入
+
+	const array = [80, 90, 40, 70];
+
+	const [a, b, c, d] = array;
+
+	console.log(a);
+	console.log(b);
+	console.log(c);
+	console.log(d);
+
+	// ↓この ... はレスト構文と呼ばれていて、このように分割代入と一緒に使うと、
+	// 　　こちらで割り当てた以外の要素をここで指定した名前の配列に格納してくれます。
+	const [e ,f, ...others] = array;
+	console.log(e);
+	console.log(f);
+	console.log(others);
+
+
+	//2つの値の交換もできる
+	let x = 30;
+	let y = 70;
+	[x, y] = [y, x]
+	console.log(x);
+	console.log(y);
+
+
 }
