@@ -90,5 +90,18 @@
 	console.log(x);
 	console.log(y);
 
+//for Each();
+
+
+	//配列arrayの要素を一個ずつ代入して実行していくEach文
+	array.forEach((array) => {
+		console.log(`Score: ${array}`);
+	});
+
+	//配列のインデックスも表示したい場合はこのように書ける
+	array.forEach((array, index) => {
+		console.log(`Score ${index}: ${array}`);
+	});
+
 
 }
