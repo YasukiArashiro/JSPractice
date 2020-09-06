@@ -107,10 +107,31 @@
 
 	const prices = [180, 190, 200];
 
-	const updatedPrices = prices.map((price) => {
-		return price + 20;
-	});
+	// const updatedPrices = prices.map((price) => {
+	// 	return price + 20;
+	// });
+
+	const updatedPrices = prices.map(price => price + 20);
+	//このように省略して書くこともできる
 
 	console.log(updatedPrices);
+
+//filter()
+
+	const numbers =[1, 4, 7, 8, 10];
+	//↑の偶数の要素だけを配列として抽出したい！
+
+	// const evenNumbers = numbers.filter(number => {
+	// 	if (number % 2 === 0) {
+	// 		return true;
+	// 	} else {
+	// 		return false;
+	// 	}
+	// });
+
+	const evenNumbers = numbers.filter(number => number % 2 === 0);
+	//このように省略して書くこともできる
+
+	console.log(evenNumbers);
 
 }
