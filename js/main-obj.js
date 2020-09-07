@@ -134,4 +134,14 @@
 
 	console.log(evenNumbers);
 
+//オブジェクト
+
+	// const point = [100, 180];
+	// const point = {x: 100, y:180};
+	const point = {
+		x: 100, // ←これをプロパティ（メンバー）と呼ぶ。 xのことは名前（キー）と呼び、100のことは値と呼ぶ。
+ 		y: 180,
+	};
+
+	console.log(point);
 }
