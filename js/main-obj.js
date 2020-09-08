@@ -147,10 +147,15 @@
 
 //プロパティ
 
-	point.x = 120;
+	point.x = 120;  //プロパテゥのxを120に変更する
 	// point['x'] = 120;
 
-	console.log(point.x);
-	console.log(point['y']);
+	console.log(point.x);     //プロパティにアクセスするには←の記法と
+	console.log(point['y']);  //←の記法の２つのがある。
+
+	point.z = 90; //プロパティにzの値をを追加
+	delete point.y; //プロパティからyの値を削除
+	console.log(point);
+
 
 }
