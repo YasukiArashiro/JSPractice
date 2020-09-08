@@ -144,4 +144,13 @@
 	};
 
 	console.log(point);
+
+//プロパティ
+
+	point.x = 120;
+	// point['x'] = 120;
+
+	console.log(point.x);
+	console.log(point['y']);
+
 }
