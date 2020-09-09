@@ -157,5 +157,25 @@
 	delete point.y; //プロパティからyの値を削除
 	console.log(point);
 
+//オブジェクト操作
+
+	const otherProps = {
+		r: 4,
+		color: 'red',
+	};
+
+	const Point = {
+		w: 100,
+		z: 180,
+		...otherProps,
+	};
+
+	console.log(Point);
+
+	const {w, z, ...rest} = Point;
+
+	console.log(w); //100
+	console.log(z); //180
+	console.log(rest); //{r: 4, color: "red"}
 
 }
