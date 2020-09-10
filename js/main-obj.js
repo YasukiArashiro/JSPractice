@@ -178,4 +178,29 @@
 	console.log(z); //180
 	console.log(rest); //{r: 4, color: "red"}
 
+//Object.keys()
+
+	const Example = {
+		x: 100,
+		y: 180,
+	};
+
+	const keys = Object.keys(Example); //Pointのすべてのキーえお配列で取得
+
+
+	keys.forEach(key => {
+		console.log(`Key: ${key} Value: ${Example[key]}`);
+	});                                //↑Point.keyではない
+
+
+	const Examples = [
+		{x: 30, y: 20},  //0
+		{x: 10, y: 50},  //1
+		{x: 40, y: 40},  //2
+	];
+
+	//50の値を取り出したい場合(配列の１番目、yの値)
+	console.log(Examples[1].y);
+
+
 }
