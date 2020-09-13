@@ -248,4 +248,24 @@
 	console.log(str[1]); //strの0から数えて１番目の文字を取得できる。この場合は'e'を取得。
 	//この記法ではこのように値の取得ができるだけで、配列と同じように扱えるわけではない。
 
+//join(),split
+
+	const Date = [2019, 11, 14];
+
+	//joinを使うと配列を結合した状態で表示できる
+	console.log(Date.join('')); // 2019/11/14
+	console.log(Date.join('/'));// 20191114
+
+
+	const Time = '17:08:24';
+	//splitを使うと文字列を区切り文字のところで分割して、それを配列にできる。
+	console.log(Time.split(':')); //[17, 08, 24]
+
+	//分割代入を使って、返り値を別々の定数に代入
+	const [hour, minute, second] = Time.split(':');
+
+	console.log(hour);  //17
+	console.log(minute);//08
+	console.log(second);//24
+
 }
