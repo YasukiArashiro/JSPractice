@@ -268,4 +268,44 @@
 	console.log(minute);//08
 	console.log(second);//24
 
+//数値計算
+
+	const SCORES = [10, 3, 9];
+
+
+	//SCORESの要素を全部足す
+
+	let SUM = 0;
+
+	SCORES.forEach(SCORES => {
+		SUM += SCORES;
+	});
+
+	console.log(SUM); //22
+
+
+	//SCORESの要素の平均値
+
+	const AVG = SUM / SCORES.length;
+
+	console.log(AVG); //7.333333333333333
+
+
+	//7.333333333333333の操作をする
+
+	//小数点以下の切り捨て
+	console.log(Math.floor(AVG));//7
+
+	//小数点以下の切り上げ
+	console.log(Math.ceil(AVG));//8
+
+	//四捨五入
+	console.log(Math.round(AVG));//7
+
+	//小数点以下○桁まで表示する（↓の場合は小数点以下３桁まで表示）
+	console.log(AVG.toFixed(3));//7.333
+
+	//乱数生成 (0以上1未満のランダムな数値を生成する)
+	console.log(Math.random());
+
 }
