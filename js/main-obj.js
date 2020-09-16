@@ -308,4 +308,32 @@
 	//乱数生成 (0以上1未満のランダムな数値を生成する)
 	console.log(Math.random());
 
+//ランダムな整数値
+
+	console.log(Math.random()); //0 ≦ x < 1 の数字
+
+	console.log(Math.random() * 3); //0 ≦ x < 3 の数字
+
+	console.log(Math.floor(Math.random() * 3)); //0 ≦ x < 3 の数字から小数点以下を切り捨てるので、
+	                                            //0か1か2が表示される
+
+	console.log('0 ~ nのランダムな整数値を出すには');
+	console.log('Math.floor(Math.random() * (n + 1)); で表示できる');
+
+	console.log('--------------------------------');
+
+	console.log('min ~ maxのランダムな整数値を出すには');
+	console.log('Math.floor(Math.random() * (max + 1 - min)) + min で表示できる');
+
+	console.log('--------------------------------');
+
+	//サイコロの場合は１〜６の整数をランダムに出す
+	console.log('サイコロのように１〜６の整数をランダムに出す');
+	console.log('↑の公式を使う');
+	console.log('Math.floor(Math.random() * (6 + 1 - 1)) + 1 で表示できる');
+
+	console.log(Math.floor(Math.random() * (6 + 1 - 1)) + 1);
+
+
+
 }
