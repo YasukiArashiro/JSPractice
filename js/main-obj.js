@@ -334,6 +334,16 @@
 
 	console.log(Math.floor(Math.random() * (6 + 1 - 1)) + 1);
 
+}
 
+{
+//現在日時
 
+	const ddd = new Date(); //現在の日時を取得
+	console.log(ddd);
+
+	console.log(ddd.getFullYear()); //年のみを４桁で取得
+	console.log(ddd.getMonth()); //月のみを取得　JSでは0月〜11月で表示されるので表示したい月に+1をしておく
+	console.log(ddd.getDate()); //日のみを取得　１〜３１
+	console.log(ddd.getDay()); //曜日のみを取得（０〜６） 日曜:0, 月曜:1, ...., 土曜:6で表される
 }
