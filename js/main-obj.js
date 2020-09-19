@@ -344,6 +344,23 @@
 
 	console.log(ddd.getFullYear()); //年のみを４桁で取得
 	console.log(ddd.getMonth()); //月のみを取得　JSでは0月〜11月で表示されるので表示したい月に+1をしておく
+								 //0:一月, 1:二月, 2:三月, 3:四月, ....., 11:十二月　で表される
 	console.log(ddd.getDate()); //日のみを取得　１〜３１
 	console.log(ddd.getDay()); //曜日のみを取得（０〜６） 日曜:0, 月曜:1, ...., 土曜:6で表される
+
+	//時間の表記
+	console.log(ddd.getHours()); //何時かを表示（０〜２３）
+	console.log(ddd.getMinutes()); //何分かを表示（０〜５９）
+	console.log(ddd.getSeconds()); //何秒かを表示（０〜５９）
+	console.log(ddd.getMilliseconds()); //ミリ秒を表示（0~999）　※1ms = 1/1000sec
+
+	console.log("↓今の月日を表示");
+	console.log(`${ddd.getMonth() + 1} 月 ${ddd.getDate()} 日 `);
+
+	//これはタイムゾーンに依存するので現地時間によって値が変わってしまう。
+	//どのタイムゾーンでも同じ値をとる方法が用意されていて、getTime()を使えば良い
+
+	console.log(ddd.getTime());
+	//UTC と呼ばれる協定世界時の 1970 年 01 月 01 日 00 時 00 分 00 秒からの
+	//経過ミリ秒が表示される。
 }
