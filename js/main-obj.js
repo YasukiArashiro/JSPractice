@@ -376,3 +376,21 @@
 	console.log(d);
 
 }
+
+{
+//alert(),confirm()
+
+	//alert('hello');
+	//アラートを表示してhelloと表示
+
+	//confirmはOKとキャンセルのどちらをユーザーが選択するかによって返り値がtrueかfalseで返ってくる
+	const answer = confirm('削除しますか？');
+	if(answer) {
+		console.log('削除しました');
+	} else {
+		console.log('キャンセルしました');
+	}
+
+}
+
+
