@@ -393,4 +393,36 @@
 
 }
 
+{
+//タイマー機能
+
+	function showTime() {
+		console.log(new Date());
+	}
+	//↑現在の日時を表示する関数
+
+	//setInterval(showTime, 1000);
+	//関数shoTimeを1秒（1000ミリ秒）毎に実行す
+
+	//上記ではshowTimeには()を付けない。
+	//()を付けてしまうと、この関数を実行したときに帰ってくる値をsetInterval()に返すことになるので。
+	//今回だとこちらの関数には返り値がないので、その場合undefinedを渡すことになって意味が異なってきます。
+
+	//回数を指定する場合
+	let i = 0;
+
+	function ShowTime(){
+		console.log(new Date());
+		i++;
+		if (i > 2) {  //3回繰り返したら処理を終了
+			clearInterval(intervalId);
+		}
+	}
+
+	const intervalId = setInterval(ShowTime, 1000);
+
+
+
+}
+
 
