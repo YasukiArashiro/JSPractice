@@ -421,8 +421,16 @@
 
 	const intervalId = setInterval(ShowTime, 1000);
 
+}
 
+{
+//setTimeout()
 
+	function ShowTime() {
+		console.log(new Date());
+	}
+
+	setTimeout(ShowTime, 1000);//指定した時間のあとに 1 回だけ処理を実行するように予約する命令
 }
 
 
