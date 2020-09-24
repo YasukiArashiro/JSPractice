@@ -433,4 +433,29 @@
 	setTimeout(ShowTime, 1000);//指定した時間のあとに 1 回だけ処理を実行するように予約する命令
 }
 
+{
+//例外処理
+
+	const name = 'taguchi';
+
+	console.log(name.toUpperCase()); //nameを大文字に変換する。TAGUCHIと表示される。
+	console.log('Finish!');
+
+	//もしtaguchiのような文字列ではなく5のような数値が入っていた場合エラーが出る。
+	const NAME = 5;
+
+	//例外処理の記述
+	try {
+		console.log(NAME.toUpperCase());
+	} catch(e) {
+		console.log(e);　//コンソールにはエラーの内容が表示される
+	}
+	//tryがもし実行できなかったら、catchの処理が実行される。
+	//catch(e)の引数eは例外に関する情報を扱うための引数。e以外でもいいが、エラーにはeがよく使われる。
+
+	console.log('Finish!');
+	//例外処理を書いていいないとconsole.log(NAME.toUpperCase());でエラーが出て、Finish!は表示されないが
+	//今回は例外処理を書いているためFinish!の行まで実行されている
+
+}
 
