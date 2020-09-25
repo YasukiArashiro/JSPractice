@@ -459,3 +459,26 @@
 
 }
 
+{
+//複数のオブジェクト
+
+	const posts = [
+		{
+			text: 'JavaScriptの練習中・・・',
+			likeCount: 0,
+		},
+		{
+			text: 'プログラミング楽しい！',
+			likeCount: 0,
+		}
+	];
+
+	function show(post) {
+		console.log(`${post.text} - ${post.likeCount}いいね`);
+	}
+
+	show(posts[0]);
+	show(posts[1]);
+
+}
+
