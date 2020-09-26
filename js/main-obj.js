@@ -480,5 +480,32 @@
 	show(posts[0]);
 	show(posts[1]);
 
+//メソッドの使用
+	const POSTS = [
+		{
+			text: 'JavaScriptを勉強しています！',
+			likeCount: 0,
+			show: function () {
+				console.log(`${this.text} - ${this.likeCount}いいね`);
+			},                 //同じオブジェクト内のプロパティにアクセスするにはthisを使う
+		},  //関数をプロパティの値にした場合、その関数をメソッドという
+
+			// show() {
+			// 	console.log(`${this.text} - ${this.likeCount}いいね`);
+			// }
+			// メソッドのfunctionの部分は↑のように省略できる
+		{
+			text: 'プログラミング!!!楽しい！!!',
+			likeCount: 0,
+			show() {
+				console.log(`${this.text} - ${this.likeCount}いいね`);
+			},
+		}
+	];
+
+	// show(POSTS[0]);
+	POSTS[0].show();
+	POSTS[1].show();
+
 }
 
