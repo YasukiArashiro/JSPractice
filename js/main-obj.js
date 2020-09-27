@@ -508,4 +508,26 @@
 	POSTS[1].show();
 
 }
+{
+
+//クラスの概念
+
+	class Post {
+		constructor(text) {
+			this.text = text;
+			this.likeCount = 0;
+		}
+		show() {
+			console.log(`${this.text} - ${this.likeCount}いいね`);
+		}
+	}
+
+	const Posts = [
+		new Post('クラスを使ってインスタンスを生成した！'),
+		new Post('この文がクラスの引数textに渡されインスタンスができる！'),
+	];
+
+	Posts[0].show();
+	Posts[1].show();
+}
 
