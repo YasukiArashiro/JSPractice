@@ -513,12 +513,25 @@
 //クラスの概念
 
 	class Post {
+
 		constructor(text) {
 			this.text = text;
 			this.likeCount = 0;
 		}
+
 		show() {
 			console.log(`${this.text} - ${this.likeCount}いいね`);
+		}
+
+		like(){
+			this.likeCount++;
+			this.show();
+		}
+
+		//↓静的メソッド(インスタンスを介さずに直接クラスから呼び出すメソッド)
+		//thisは使えない！！
+		static showinfo() {
+			console.log('Post class version 1.0');
 		}
 	}
 
@@ -529,5 +542,16 @@
 
 	Posts[0].show();
 	Posts[1].show();
+
+//カプセル化
+
+	Posts[0].like();
+
+//静的メソッド(インスタンスを介さずに直接クラスから呼び出すメソッド)
+
+	Post.showinfo();
+
+
+
 }
 
