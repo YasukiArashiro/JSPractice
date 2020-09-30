@@ -531,7 +531,7 @@
 		//↓静的メソッド(インスタンスを介さずに直接クラスから呼び出すメソッド)
 		//thisは使えない！！
 		static showinfo() {
-			console.log('Post class version 1.0');
+			console.log('Post class version 1.00!!');
 		}
 	}
 
