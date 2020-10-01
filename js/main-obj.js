@@ -551,7 +551,41 @@
 
 	Post.showinfo();
 
+//クラスの拡張
 
+	class SponsoredPost {
+
+		constructor(text, sponsor) {
+			this.text = text;
+			this.likeCount = 0;
+			this.sponsor = sponsor;
+		}
+
+		show() {
+			console.log(`${this.text} - ${this.likeCount}いいね`);
+			console.log(`... sponsored by ${this.sponsor}`);
+		}
+
+		like(){
+			this.likeCount++;
+			this.show();
+		}
+
+		//↓静的メソッド(インスタンスを介さずに直接クラスから呼び出すメソッド)
+		//thisは使えない！！
+		static showinfo() {
+			console.log('Post class version 1.00!!');
+		}
+	}
+
+	const POSTS = [
+		new Post('クラスを使ってインスタンスを生成した！'),
+		new Post('この文がクラスの引数textに渡されインスタンスができる！'),
+		new SponsoredPost('３分動画でマスターしよう', 'dotinstall'),
+	];
+
+	POSTS[2].show();
+	POSTS[2].like();
 
 }
 
