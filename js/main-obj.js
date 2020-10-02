@@ -512,7 +512,7 @@
 
 //クラスの概念
 
-	class Post {
+	class Post {        //親クラス
 
 		constructor(text) {
 			this.text = text;
@@ -553,16 +553,16 @@
 
 //クラスの拡張
 
-	class SponsoredPost {
+	class SponsoredPost extends Post {    //子クラス
 
 		constructor(text, sponsor) {
-			this.text = text;
-			this.likeCount = 0;
+			super(text);  //superで親クラスのconstructorが呼び出される。
+						  //constructorにはtextが渡されているのでこちらにもtextを書く
 			this.sponsor = sponsor;
 		}
 
 		show() {
-			console.log(`${this.text} - ${this.likeCount}いいね`);
+			super.show();
 			console.log(`... sponsored by ${this.sponsor}`);
 		}
 
@@ -586,6 +586,8 @@
 
 	POSTS[2].show();
 	POSTS[2].like();
+
+//クラスの継承
 
 }
 
