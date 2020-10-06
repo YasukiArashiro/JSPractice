@@ -21,5 +21,11 @@
 		})
 	}
 
+	document.querySelector('button').addEventListener('click', () => {
+		document.getElementById('target').textContent = 'ボタン押したら変わりました！';
+	})
+
 	setTimeout(update, 1000);　//１秒後にupdateを実行する
+
+
 }
