@@ -8,8 +8,15 @@
 			//中身のテキストはtextContentで扱うことができる。
 
 		//document.querySelector('#target').textContent = 'Changed!';
-		document.getElementById('target').textContent = 'Changed!!!';
+		//document.getElementById('target').textContent = 'Changed!!!';
 		//このように２つの書き方ができる。getElementByIdの時は、taegetに#を付けなくてもよい
+
+		const targetNode = document.getElementById('target');
+
+		targetNode.textContent = 'Changed!!!';
+		targetNode.title = 'This is title!';
+		targetNode.style.color = 'red';
+		targetNode.style.backgroundColor = 'skyblue';
 
 		//document.querySelector('p').textContent = 'pを書き換えました！！'; ※最初にpだけ書き換えられる
 
