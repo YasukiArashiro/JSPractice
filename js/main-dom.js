@@ -15,8 +15,7 @@
 
 		targetNode.textContent = 'Changed!!!';
 		targetNode.title = 'This is title!';
-		targetNode.style.color = 'red';
-		targetNode.style.backgroundColor = 'skyblue';
+		targetNode.className = 'my-color my-border';
 
 		//document.querySelector('p').textContent = 'pを書き換えました！！'; ※最初にpだけ書き換えられる
 
