@@ -14,7 +14,9 @@
 // 		const targetNode = document.getElementById('target');
 
 // 		targetNode.textContent = 'Changed!!!';
+
 // 		targetNode.title = 'This is title!';
+
 // 		targetNode.className = 'my-color my-border';
 
 // 		//document.querySelector('p').textContent = 'pを書き換えました！！'; ※最初にpだけ書き換えられる
