@@ -52,6 +52,12 @@
     // } else {
     //   targetNode.classList.add('my-color');
     // }
-    targetNode.classList.toggle('my-color');
+
+    //targetNode.classList.toggle('my-color');
+
+    //targetNode.textContent = 'Dotinstall';
+    targetNode.textContent = targetNode.dataset.translation;
+
+
   });
 }
