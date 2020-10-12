@@ -40,7 +40,6 @@
 
 
 
-
 {
   document.querySelector('button').addEventListener('click', () => {
     const targetNode = document.getElementById('target');
@@ -58,6 +57,12 @@
     //targetNode.textContent = 'Dotinstall';
     targetNode.textContent = targetNode.dataset.translation;
 
+    //要素の追加
+    const item2 = document.createElement('li'); //li要素を作成
+    item2.textContent = 'item 2'; //liの中のテキストを設定
+
+    const ulNode = document.querySelector('ul'); //まずは親要素であるul要素をquerySelectorで取得
+    ulNode.appendChild(item2); //ulの子要素の末尾にitem2の要素を追加
 
   });
 }
