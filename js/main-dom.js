@@ -64,5 +64,18 @@
     const ulNode = document.querySelector('ul'); //まずは親要素であるul要素をquerySelectorで取得
     ulNode.appendChild(item2); //ulの子要素の末尾にitem2の要素を追加
 
+
+    //要素の複製と追加
+    const item0 = document.querySelectorAll('li')[0];
+
+    const copy = item0.cloneNode(true); //()の中をfalseにすると要素の中身を複製しない空のli要素ができる
+
+    const ul = document.querySelector('ul'); //親要素を所得
+    const Item2 = document.querySelectorAll('li')[2]; //item2を所得
+
+    ul.insertBefore(copy, Item2); //Item2の前にcopyを挿入する(insertBefore)
+
+
+
   });
 }
