@@ -75,7 +75,10 @@
 
     ul.insertBefore(copy, Item2); //Item2の前にcopyを挿入する(insertBefore)
 
+    const item1 = document.querySelectorAll('li')[1];
 
-
+    //item1.remove();
+    //親Node.removeChild(削除するNode)
+    document.querySelector('ul').removeChild(item1);
   });
 }
