@@ -80,5 +80,6 @@
     //item1.remove();
     //親Node.removeChild(削除するNode)
     document.querySelector('ul').removeChild(item1);
+
   });
 }
