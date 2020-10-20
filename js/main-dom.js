@@ -68,6 +68,7 @@
 
 
     //要素の複製と追加
+
     const item0 = document.querySelectorAll('li')[0];
 
     const copy = item0.cloneNode(true); //()の中をfalseにすると要素の中身を複製しない空のli要素ができる
